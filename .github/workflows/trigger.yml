@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger subsequent workflows
-        run: echo "Triggering subsequent workflows... starting..."
+        run: echo "Triggering subsequent workflows..."
