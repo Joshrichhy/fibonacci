@@ -1,0 +1,15 @@
+name: push
+
+on:
+  workflow_run:
+    workflows: ["Trigger Workflows"]  # Name of the first workflow
+    types:
+      - completed  # Trigger after the workflow completes
+ 
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger subsequent workflows
+        run: echo "... starting..."
